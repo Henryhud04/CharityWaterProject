@@ -147,3 +147,38 @@ a {
   border-radius: 8px;
   margin-top: 20px;
 }
+
+/* Smooth transition for all elements */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effects */
+.button {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Image hover zoom effect */
+.card img,
+.hero-img,
+.change-text img,
+.contact-img {
+  transition: transform 0.3s ease;
+}
+.card img:hover,
+.hero-img:hover,
+.change-text img:hover,
+.contact-img:hover {
+  transform: scale(1.03);
+}
